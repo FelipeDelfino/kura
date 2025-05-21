@@ -14,8 +14,16 @@ export default function Hero() {
       </Box>
 
       <Box display='flex' maxH='100vh' minH='65vh' alignItems='center' pt={{ base: 12, md: 0 }}>
+        <Box
+        position='absolute'
+          width="50%"
+          height="65vh"
+          bg="white"
+          transform="skewX(-16deg)"
+          transformOrigin="top left"
+        />
         <Container centerContent>
-          <Flex direction={{ base: 'column', lg: 'row' }} gap={24} align="center">
+          <Flex direction={{ base: 'column', lg: 'row' }}  align="center" justify='space-between' w='100%'>
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +39,7 @@ export default function Hero() {
                   </Box>
                   <Box mt='12'>
                     <Flex direction='column' justifyContent='center' textAlign={{ base: 'center', lg: 'start' }}>
-                      <Text fontSize={['xl', '2xl', '3xl']} fontWeight='bold' letterSpacing={2}>
+                      <Text fontSize={['xl', '2xl', '3xl']} fontWeight='bold' letterSpacing={2} color='black'>
                         MAIS QUE UMA AGÊNCIA,
                       </Text>
                       <Text fontSize={['xl', '2xl', '3xl']} fontWeight='bold' letterSpacing={2} color='#f29f1e'>
@@ -60,7 +68,7 @@ export default function Hero() {
                     KURA CRIATIVA
                   </Text>
                 </motion.div>
-                <Text fontSize={['sm', 'md']} fontWeight='light' color='#D3D3D3'>
+                <Text fontSize={['md', 'lg']} fontWeight='bold' color='#D3D3D3'>
                   <br />
                   Consultoria de Imagem + Tecnologia = Marketing Digital com Propósito. Na Kura Criativa, somos a combinação perfeita entre criatividade e estratégia.
                   <br /><br />
