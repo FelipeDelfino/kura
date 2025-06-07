@@ -6,6 +6,7 @@ import Services from "components/home/Services";
 import Footer from "components/layout/Footer";
 import Navbar from "components/layout/Navbar";
 import { Toaster } from "@/components/ui/toaster";
+import FeedBack from "@/components/home/Feedback";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <div id="services">
         <Services />
       </div>
+      <FeedBack/>
       <div id="contact">
         <Contact />
 

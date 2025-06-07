@@ -4,6 +4,7 @@
 import { Box, Container, Flex, Text, Button, Icon, Stack, Card } from "@chakra-ui/react";
 import { FaUsersGear, FaCalendarDay, FaLaptopCode, FaChartLine } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import ServiceCarousel from "components/ui/serviceCarousel";
 // import { Card } from "../ui/card";
 
 const services = [
@@ -47,19 +48,20 @@ export default function Services() {
   // const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
-    <Box as="section" maxH="100%" minH="75vh" display="flex" alignItems="center" py={12}>
+    <Box as="section" maxH="100%" minH="80dvh" display="flex" alignItems="center" py={12} bg='#f29f1e'>
       <Container maxW="8xl" centerContent>
-        <Stack gap={12} textAlign="center" w="full">
-          <Box>
-            <Text fontSize={['2xl', '3xl', '4xl']} fontWeight="black" letterSpacing={3} color="#f29f1e">
-              NOSSOS SERVIÇOS
-            </Text>
-            <Text fontSize={['sm', 'md', 'lg']} fontWeight="bold" color="#D3D3D3" mt={2}>
-              Soluções completas para sua presença digital
-            </Text>
-          </Box>
+        {/* <Box> */}
+          <Text fontSize={['2xl', '3xl', '4xl']} fontWeight="black" letterSpacing={3} color="">
+            OQUE VOCÊ <span style={{color:'black'}}>PRECISA</span> E MUITO <span style={{color:'black'}}>MAIS!</span>
+          </Text>
+          <Text fontSize={['sm', 'md', 'lg']} fontWeight="bold" color="black" mt={2}>
+           NOSSOS SERVIÇOS
+          </Text>
+        {/* </Box> */}
+        <ServiceCarousel/>
+        {/* <Stack gap={12} textAlign="center" w="full">
 
-          <Flex direction="row" gap={8} wrap="wrap" justify="center">
+          <Flex direction="row" Rgap={8} wrap="wrap" justify="center">
             {services.map((service, index) => (
               <MotionCard
                 key={index}
@@ -77,7 +79,7 @@ export default function Services() {
               </MotionCard>
             ))}
           </Flex>
-        </Stack>
+        </Stack> */}
       </Container>
     </Box>
   );
