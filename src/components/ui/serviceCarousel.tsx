@@ -36,10 +36,11 @@ const ServiceCarousel: React.FC = () => {
   return (
     <div className={styles.container}>
       <Swiper
-        effect="coverflow"
+        // effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
         loop={true}
+        spaceBetween={30}
         slidesPerView={3}
         autoplay={{
           delay: 3500,
@@ -48,13 +49,20 @@ const ServiceCarousel: React.FC = () => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 100,
-          modifier: 2.5,
+          depth: 0,
+          // modifier: 2.5,
           // slideShadows: false,
         }}
         pagination={{ clickable: true }}
         // navigation
-        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+        modules={
+          [ 
+            // EffectCoverflow, 
+            Pagination, 
+            Navigation, 
+            Autoplay
+          ]
+        }
         className={styles.swiper}
       >
         {movies.map((movie, index) => (
@@ -62,7 +70,7 @@ const ServiceCarousel: React.FC = () => {
             <img src={movie.image} alt={movie.title} className={styles.image} />
             <div className={styles.info}>
               <h3>{movie.title}</h3>
-              <p>{movie.description}</p>
+              {/* <p>{movie.description}</p> */}
             </div>
           </SwiperSlide>
         ))}

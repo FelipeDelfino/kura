@@ -7,11 +7,11 @@ import {
     HStack,
 } from '@chakra-ui/react';
 
+
 interface FeedbackCardProps {
     name: string;
     role: string;
     company: string;
-    // image: string;
     testimony: string;
 }
 
@@ -19,9 +19,20 @@ export const FeedbackCard = ({
     name,
     role,
     company,
-    // image,
     testimony,
 }: FeedbackCardProps) => {
+
+    const avatarColors = [
+        'blue',
+        // 'green',
+        // 'yellow',
+        'purple',
+        // 'red',
+        'pink',
+        'cyan',
+        // 'orange',        
+    ];
+    const randomColor = avatarColors[Math.floor(Math.random() * avatarColors.length)];
     return (
         <Box
             bg="gray.800"
@@ -35,14 +46,27 @@ export const FeedbackCard = ({
             h='28vh'
             w="full"
         >
-            <VStack justify='end' align='start' bg='green' w='' h='full'>
-                <Text fontStyle="italic" mb={4} fontWeight='light'>
-                    "{testimony}"
-                </Text>
-                <Flex align='' bg='red'>
+            <Flex direction='column' justifyContent='space-between' bg='' w='' h='full'>
+                <Box>
+                    <Text fontStyle="italic" mb={4} fontWeight='light'>
+                        "{testimony}"
+                    </Text>
+                </Box>
+                <Flex align='' bg=''>
                     <HStack gap={4} mt={4}>
-                        <Avatar.Root variant='solid' outlineWidth='2px' outlineOffset="1.5px" outlineStyle="solid" outlineColor='yellow'>
-                            <Avatar.Fallback name={name} />
+                        <Avatar.Root
+                            // key={index}
+                            colorPalette={randomColor}
+                            variant='solid'
+                            // outlineWidth='2px'
+                            // outlineOffset="1.5px"
+                            // outlineStyle="solid"
+                            // outlineColor={randomColor}
+                            // colorPalette={color}
+                        >
+                            <Avatar.Fallback
+                                name={name}
+                            />
                         </Avatar.Root>
                         <VStack align="start" gap={0}>
                             <Text fontWeight="bold">{name}</Text>
@@ -52,7 +76,7 @@ export const FeedbackCard = ({
                         </VStack>
                     </HStack>
                 </Flex>
-            </VStack>
+            </Flex>
         </Box >
     );
 };

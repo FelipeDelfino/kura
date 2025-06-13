@@ -16,7 +16,7 @@ export default function FeedBack() {
                 <Text fontSize={['2xl', '3xl', '4xl']} fontWeight="black" letterSpacing={3} color="#f29f1e">
                     SINTA OQUE É <span style={{ color: 'WHITE' }}>SATISFAÇÃO</span>
                 </Text>
-                <HStack>
+                <HStack mt={12}>
 
                     <FeedbackCard
                         name="Maria Oliveira"
@@ -36,6 +36,13 @@ export default function FeedBack() {
                         company="Inova Bem"
                         testimony="Profissionalismo, criatividade e foco em resultados. A equipe da Kura é fantástica! Nossas campanhas de marketing nunca foram tão eficientes."
                     />
+                    <FeedbackCard
+                        name="Maria Oliveira"
+                        role="Diretora de Marketing"
+                        company="Inova Bem"
+                        testimony="Profissionalismo, criatividade e foco em resultados. A equipe da Kura é fantástica! Nossas campanhas de marketing nunca foram tão eficientes."
+                    />
+                    
                 </HStack>
 
                 {/* </Box> */}

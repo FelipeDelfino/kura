@@ -7,17 +7,17 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <Box as="section" minH="75vh" pt={{ base: 12, md: 20 }}>
+    <Box as="section" minH="75vh" pt={{ base: 12, md: 20 }} bg='#1E3A5F'>
       <Container maxW="8xl">
-        <Flex direction="column" gap={12}>
+        <Flex direction="column" gap={12} align='center'>
           <Text
             fontSize={["2xl", "3xl", "4xl"]}
             fontWeight="black"
             letterSpacing={3}
-            color="#f29f1e"
+            // color="#f29f1e"
             textAlign={{ base: "center", md: "left" }}
           >
-            PRONTO PARA LEVAR SUA MARCA PARA O PRÓXIMO NÍVEL?
+            PRONTO PARA ESTAR UM <b style={{color:'#f29f1e'}}>PASSO A FRENTE</b> DO <b style={{color:'#f29f1e'}}>AMANHÃ?</b>
           </Text>
 
           <Flex
