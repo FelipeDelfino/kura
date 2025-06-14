@@ -81,23 +81,23 @@ export default function Clients() {
                         <Box bg='' minH='100%'>
                             <ChakraImage
                                 fit="cover"
-                                src="https://gkfykfburbyl7hji.public.blob.vercel-storage.com/ft2-v2S0l37TOgRpae8lBySPMblLA5Pe2B.png"
+                                src="https://gkfykfburbyl7hji.public.blob.vercel-storage.com/cover2-lUTwFVfA7ijNRKP1GHs91cpUNbZ4h1.png"
                                 alt="Dan Abramov"
-                            />
+                                />
                         </Box>
                     </GridItem>
                     <GridItem bg=''>
                         <Box bg='' minH='100%'>
                             <ChakraImage
-                                src="https://gkfykfburbyl7hji.public.blob.vercel-storage.com/ft2-v2S0l37TOgRpae8lBySPMblLA5Pe2B.png"
+                                src="https://gkfykfburbyl7hji.public.blob.vercel-storage.com/cover1-FRnTbZUDx3rQQyxoop6EikpKFxv7xr.png"
                                 alt="Dan Abramov"
-                            />
+                                />
                         </Box>
                     </GridItem>
                     <GridItem bg=''>
                         <Box bg='' minH='100%'>
                             <ChakraImage
-                                src="https://gkfykfburbyl7hji.public.blob.vercel-storage.com/ft2-v2S0l37TOgRpae8lBySPMblLA5Pe2B.png"
+                                src="https://gkfykfburbyl7hji.public.blob.vercel-storage.com/cover3-ANCeXoBl4lG2w3jdu9Rz42Z7ajMIFU.png"
                                 alt="Dan Abramov"
                             />
                         </Box>

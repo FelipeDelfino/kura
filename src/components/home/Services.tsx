@@ -51,35 +51,13 @@ export default function Services() {
     <Box as="section" maxH="100%" minH="80dvh" display="flex" alignItems="center" py={12} bg='#f29f1e'>
       <Container maxW="8xl" centerContent>
         {/* <Box> */}
-          <Text fontSize={['2xl', '3xl', '4xl']} fontWeight="black" letterSpacing={3} color="">
-            OQUE VOCÊ <span style={{color:'black'}}>PRECISA</span> E MUITO <span style={{color:'black'}}>MAIS!</span>
-          </Text>
-          <Text fontSize={['sm', 'md', 'lg']} fontWeight="bold" color="black" mt={2}>
-           NOSSOS SERVIÇOS
-          </Text>
-        {/* </Box> */}
-        <ServiceCarousel/>
-        {/* <Stack gap={12} textAlign="center" w="full">
-
-          <Flex direction="row" Rgap={8} wrap="wrap" justify="center">
-            {services.map((service, index) => (
-              <MotionCard
-                key={index}
-                width={['90vw', '45vw', '320px']}
-                {...cascadeProps(index)}
-              >
-                <Card.Body gap="2">
-                  <Icon fontSize="40px">{service.icon}</Icon>
-                  <Card.Title mt="2">{service.title}</Card.Title>
-                  <Card.Description>{service.description}</Card.Description>
-                </Card.Body>
-                <Card.Footer justifyContent="flex-end">
-                  <Button borderRadius="lg" bg={'#f29f1e'}>Solicite um Orçamento</Button>
-                </Card.Footer>
-              </MotionCard>
-            ))}
-          </Flex>
-        </Stack> */}
+        <Text fontSize={['2xl', '3xl', '4xl']} fontWeight="black" letterSpacing={3} color="">
+          OQUE VOCÊ <span style={{ color: 'black' }}>PRECISA</span> E MUITO <span style={{ color: 'black' }}>MAIS!</span>
+        </Text>
+        <Text fontSize={['sm', 'md', 'lg']} fontWeight="bold" color="black" mt={2}>
+          NOSSOS SERVIÇOS
+        </Text>
+        <ServiceCarousel />
       </Container>
     </Box>
   );

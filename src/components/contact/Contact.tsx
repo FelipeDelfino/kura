@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <Box as="section" minH="75vh" pt={{ base: 12, md: 20 }} bg='#1E3A5F'>
+    <Box as="section" minH="75vh" pt={{ base: 12, md: 20 }} bg='#FFF'>
       <Container maxW="8xl">
         <Flex direction="column" gap={12} align='center'>
           <Text
