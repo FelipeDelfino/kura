@@ -36,7 +36,7 @@ export default function About() {
             />
           </Flex>
 
-          <Box
+          <Flex
             w={{ base: "100%", md: "35vw" }}
             minH={{ base: "auto", md: "80vh" }}
             bg="#09090B"
@@ -45,6 +45,7 @@ export default function About() {
             alignItems="center"
             justifyContent="center"
             p={{ base: 6, md: 10 }}
+            direction='column'
           >
             <Card.Root bg="transparent" variant="subtle" size="lg" gap="6">
               <Card.Header gap={4}>
@@ -56,9 +57,9 @@ export default function About() {
                 >
                   QUEM SOMOS
                 </Text>
-                <Card.Title fontSize={{ base: "lg", md: "xl" }}>
+                {/* <Card.Title fontSize={{ base: "lg", md: "xl" }}>
                   Criatividade e Tecnologia para Resultados Reais
-                </Card.Title>
+                </Card.Title> */}
               </Card.Header>
               <Card.Body>
                 <Card.Description fontSize={{ base: "sm", md: "md" }} color="gray.200">
@@ -66,7 +67,24 @@ export default function About() {
                 </Card.Description>
               </Card.Body>
             </Card.Root>
-          </Box>
+            <Card.Root bg="transparent" variant="subtle" size="lg" gap="6">
+              <Card.Header gap={4}>
+                <Text
+                  fontSize={{ base: "2xl", md: "4xl" }}
+                  fontWeight="black"
+                  letterSpacing={3}
+                  color="#f29f1e"
+                >
+                  NOSSO PROPÓSITO
+                </Text>
+              </Card.Header>
+              <Card.Body>
+                <Card.Description fontSize={{ base: "sm", md: "md" }} color="gray.200">
+                Criatividade que conecta, estratégia que transforma. Acreditamos que cada marca possui uma essência única. Nossa missão é traduzir essa essência em resultados concretos, construindo conexões autênticas e desenvolvendo estratégias personalizadas que impulsionam o seu negócio.
+                </Card.Description>
+              </Card.Body>
+            </Card.Root>
+          </Flex>
         </Flex>
       </Container>
     </Box>

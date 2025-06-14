@@ -5,6 +5,8 @@ import Purpose from "components/home/Purpose";
 import Services from "components/home/Services";
 import Footer from "components/layout/Footer";
 import Navbar from "components/layout/Navbar";
+import Examples from "components/home/Ex"
+import Clients from "components/home/Clients";
 import { Toaster } from "@/components/ui/toaster";
 import FeedBack from "@/components/home/Feedback";
 
@@ -15,17 +17,18 @@ export default function Home() {
       <Navbar />
         <Hero />
       </div>
-      <Purpose />
+      <Clients/>
+      {/* <Purpose /> */}
       <div id="about">
         <About />
       </div>
+      <Examples/>
       <div id="services">
         <Services />
       </div>
       <FeedBack/>
       <div id="contact">
         <Contact />
-
       </div>
       <Footer />
       <Toaster/>
