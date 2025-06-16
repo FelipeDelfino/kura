@@ -1,5 +1,6 @@
 "use-client"
 import { Box, Container, Flex, Text, Button, Icon, Stack, Card } from "@chakra-ui/react";
+import LightboxGallery from "../motion/lightbox";
 
 export default function Ex() {
     return (
@@ -16,7 +17,7 @@ export default function Ex() {
                     </Box>
 
                     <Flex direction="row" gap={8} wrap="wrap" justify="center">
-                        klasdjalksdjaskldjaslkj
+                        <LightboxGallery/>
                     </Flex>
                 </Stack>
             </Container>

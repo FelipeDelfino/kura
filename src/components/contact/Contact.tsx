@@ -14,7 +14,7 @@ export default function Contact() {
             fontSize={["2xl", "3xl", "4xl"]}
             fontWeight="black"
             letterSpacing={3}
-            // color="#f29f1e"
+            color="black"
             textAlign={{ base: "center", md: "left" }}
           >
             PRONTO PARA ESTAR UM <b style={{color:'#f29f1e'}}>PASSO A FRENTE</b> DO <b style={{color:'#f29f1e'}}>AMANHÃ?</b>

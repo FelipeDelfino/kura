@@ -10,9 +10,9 @@ export default function FeedBack() {
     // const isMobile = useBreakpointValue({ base: true, md: false });
 
     return (
-        <Box as="section" maxH="" minH="80dvh" display="flex" alignItems="center" py={12} bg='green'>
-            <Container maxW="8xl" centerContent h='100%' bg='blue'>
-                <Flex justify='space-between' direction='column' align='center' bg='red' h='100%'>
+        <Box as="section" maxH="" minH="80dvh" display="flex" alignItems="center" py={12} bg=''>
+            <Container maxW="8xl" centerContent h='50dvh' bg=''>
+                <Flex justify='space-between' direction='column' align='center' bg='' h='100%'>
                     <Text fontSize={['2xl', '3xl', '4xl']} fontWeight="black" letterSpacing={3} color="#f29f1e">
                         SINTA OQUE É <span style={{ color: 'WHITE' }}>SATISFAÇÃO</span>
                     </Text>

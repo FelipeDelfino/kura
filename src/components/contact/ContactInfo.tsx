@@ -20,18 +20,18 @@ export default function ContactInfo() {
               <Text fontSize="lg" color="#f29f1e" textAlign={{ base: 'center', md: 'left' }}>
                 Fale com a gente! É só clicar aqui:
               </Text>
-              <Link>Whats da KC</Link>
+              <Link color='black'>Whats da KC</Link>
               <Text fontSize="lg" color="#f29f1e">Ou se preferir, ligue para:</Text>
-              <Link>(11)97215-7732</Link>
+              <Link color='black'>(11)97215-7732</Link>
             </Flex>
 
             <Separator orientation={{ base: 'horizontal', md: 'vertical' }} color="#f29f1e" />
 
             <Flex direction="column" gap={2} align={{ base: 'center', md: 'flex-start' }}>
               <Text fontSize="lg" color="#f29f1e">Mande um Email:</Text>
-              <Link>contato@kuracriativa.com.br</Link>
+              <Link color='black'>contato@kuracriativa.com.br</Link>
               <Text fontSize="lg" color="#f29f1e">Endereço:</Text>
-              <Link textAlign={{ base: 'center', md: 'left' }}>
+              <Link textAlign={{ base: 'center', md: 'left' }} color='black'>
                 R. Jurubatuba, 1350 - CJ 717 - Centro, São Bernardo do Campo - SP, 09725-000
               </Link>
             </Flex>
@@ -42,6 +42,7 @@ export default function ContactInfo() {
             fontWeight="medium"
             textAlign={{ base: 'center', md: 'left' }}
             maxW="2xl"
+            color='black'
           >
             Quer saber por onde começar? Mande uma mensagem e receba uma análise gratuita da sua presença digital!
           </Text>
